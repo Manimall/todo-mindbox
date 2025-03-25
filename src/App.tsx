@@ -28,7 +28,7 @@ function App() {
           size="xl"
           color="blue.600"
           textAlign="center"
-          mb={8}
+          mb={38}
         >
           ToDo Mindobx List
         </Heading>
