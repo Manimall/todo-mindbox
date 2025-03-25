@@ -1,4 +1,4 @@
-# Logs
+# Логи
 logs
 *.log
 npm-debug.log*
@@ -7,12 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Зависимости и сборка
+/node_modules
+/.pnpm-store
+/.yarn/cache
+/.yarn/unplugged
+/.yarn/build-state.yml
+/.yarn/install-state.gz
+.pnpm-debug.log
 
-# Editor directories and files
+# Артефакты сборки
+/dist
+/dist-ssr
+/*.local
+
+# Кэши
+.cache/
+.temp/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -23,7 +41,11 @@ dist-ssr
 *.sln
 *.sw?
 
-.DS_Store
-*.log
-.idea/
-.vscode/
+# Тестовые покрытия
+/coverage
+*.lcov
+
+# Системные
+Thumbs.db
+ehthumbs.db
+[Tt]humbs.db
